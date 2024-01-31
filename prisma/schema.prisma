@@ -14,7 +14,7 @@ model Issues {
   id          Int      @id @default(autoincrement())
   title       String   @db.VarChar(255)
   description String   @db.Text
-  statud      Status   @default(OPEN)
+  status      Status   @default(OPEN)
   createAt    DateTime @default(now())
   updateAt    DateTime @updatedAt
 }
